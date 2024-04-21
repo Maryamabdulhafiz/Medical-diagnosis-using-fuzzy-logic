@@ -1,6 +1,7 @@
 <?php
 		session_start();
-		require 'dp.php';
+		// require 'dp.php';
+		$con=mysqli_connect("localhost","root","","diseasedb") or die("couldn't to the  server");
 		if($con){
 			$email=$_POST['email'];
 			$pwd=$_POST['password'];
